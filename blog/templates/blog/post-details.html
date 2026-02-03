@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %} This Post Title {% endblock title %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static "blog/post-details.css" %}">
+{% endblock css_files %}
+
+{% block content %}
+    <section id="summary">
+        <h2>Post <Title></Title></h2>
+        <article>
+            <img src="{% static "blog/images/mountains.jpg" %}" alt="Post Title">
+            <address>By Fulvio</address>
+            <div>
+                Last updated on <time>July 10th</time>
+            </div>
+        </article>
+    </section>
+
+    <main>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam explicabo blanditiis vero dolorum 
+            rerum. Accusantium fugit quibusdam quam sapiente placeat aliquid minima fuga, deserunt possimus omnis 
+            obcaecati architecto. Fuga, quibusdam?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam explicabo blanditiis vero dolorum 
+            rerum. Accusantium fugit quibusdam quam sapiente placeat aliquid minima fuga, deserunt possimus omnis 
+            obcaecati architecto. Fuga, quibusdam?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam explicabo blanditiis vero dolorum 
+            rerum. Accusantium fugit quibusdam quam sapiente placeat aliquid minima fuga, deserunt possimus omnis 
+            obcaecati architecto. Fuga, quibusdam?
+        </p>
+     
+    </main>
+{% endblock content %}
+
